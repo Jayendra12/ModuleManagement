@@ -45,8 +45,8 @@ button {
 
 <h2>Module Form</h2>
 
-<form action="ModuleRegisterAndViewServlet" name="myForm">
-  <input type="hidden" name="htmlFormName" value="myForm"/>
+<form action="ModuleRegisterAndViewServlet" name="myForm" method="post">
+  <input type="hidden" name="registerForm" value="registerForm">
 
   <div class="container">
     <label><b>Module Code</b></label>

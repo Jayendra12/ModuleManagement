@@ -16,7 +16,8 @@
 <div class="col-md-6 blue">
 <center>
 <a href="CreateModule.jsp" class="btn btn-info" role="button">Create Module</a>|
-<a href="ViewModule.jsp" class="btn btn-info" role="button">View Module</a><br>
+<a  href="ModuleRegisterAndViewServlet?viewName=viewModule"  class="btn btn-info" role="button">View Module</a><br>
+ 
 <a href="editModule.jsp" class="btn btn-info" role="button">Edit Module</a>
 </div>
 

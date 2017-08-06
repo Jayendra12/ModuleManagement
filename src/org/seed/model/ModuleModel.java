@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.seed.bean.Module;
 import org.seed.util.Connectivity;
@@ -85,7 +86,7 @@ public class ModuleModel {
 		}
 		return i; 
     }
-    public String fetchModules(){
+    public List<Module> fetchModules(){
     	String sql="select * from modules";
     	try {
 			PreparedStatement stmt=con.prepareStatement(sql);
@@ -109,7 +110,7 @@ public class ModuleModel {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return "data retrieved successfully";	
+		return moduleList;	
     }
     public boolean isModuleNameAndHoursUnique(String moduleName,int hours){
     	String sql="select moduleName,noOfHours from modules where moduleName=? and noOfHours=?";
